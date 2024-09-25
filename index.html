@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE-edge">
+       <meta charset="viewpoint" content="width=device-width, initial-scale=1.0">
+    </head>
+    <title> Personal Portifolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="" href="main.js">
+    <script src="https://kit.fontawesome.com/095739f950.js" crossorigin="anonymous"></script>
+    <body>
+        <div id="header">
+         <div class="container">
+            <nav>
+               <img id="logo" src="images/eddy_logo.png" class="eddy_logo">
+               <ul id="sidemenu">
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+               </ul>
+               <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="header-text">
+               <p id="fancytext">Content Creator </p>
+               <h1>Hi, I'm <span>E</span>ddy</h1>
+               <h1>From  Rwanda</h1>
+      </div>
+      <!-- ----------------------------About me ------------------------->
+      <div id="about">
+         <div class="container">
+            <div class="row">
+               <div class="about-col-1">
+                  <img src="images/IMG_5130.JPG">
+               </div>
+                     <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>As a versatile content creator, I craft compelling and engaging content across various platforms to captivate audiences and drive results. With expertise in writing, photography, video production, and social media, I employ a multifaceted approach to content creation that effectively enhances brand storytelling. My goal is to deliver high-quality, tailored content that resonates with audiences and supports business objectives.</p>
+                        <div class="tab-titles">
+                           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                           <p class="tab-links" onclick="opentab('experince')">Experience</p>
+                           <p class="tab-links" onclick="opentab('project')">Projects</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                           <ul>
+                              <li><span>Visual Content Creation</span><br>Graphic design,photography, etc.</li>
+                              <li><span>Creativity</span><br>Develop innovative content ideas.</li>
+                              <li><span>Writing and Editing</span><br>Write engaging, high-quality content</li>
+                              <li><span>Analytics and Data Analysis</span><br>Make data-driven decisions</li>
+                           </ul>
+                        </div>
+                        <div class="tab-contents" id="experince">
+                           <ul>
+                              <li><span>2024-Current</span><br>Created a social media campaign for a fashion brand</li>
+                              <li><span>2023-2024</span><br>Developed a content marketing <br>strategy for a tech startup</li>
+                              <li><span>2022-2023</span><br>Wrote and edited a series of<br> blog posts for a health and <br>wellness website</li>
+                              <li><span>2021-2022</span><br>Analyzed website traffic and <br>engagement metrics for an e-commerce website</li>
+                           </ul>
+                        </div>
+                        <div class="tab-contents" id="project">
+                           <ul>
+                              <li><span>Blog posts</span><br>Interviews</li>
+                              <li><span>Social media content</span><br>BITE MURUBYIRUKO</li>
+                              <li><span>Case studies</span><br>Character studies</li>
+                           </ul>
+                        </div>
+                     </div>   
+            </div>
+         </div>
+      </div>
+ <!---------------------------------------services------------------------------------>
+<div id="services">
+   <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+         <div>
+            <i class="fa-solid fa-video"></i>
+            <h2>Video production</h2>
+            <p>We provide top-quality video production services, turning your ideas into engaging stories. From concept to final edit, we offer complete solutions tailored to your needs.</p>
+               <a href="#">Learn more</a>
+         </div>
+         <div>
+            <i class="fa-solid fa-pen-to-square"></i>
+            <h2>Content writing</h2>
+            <p>We offer professional content writing services that focus on quality, engagement, and SEO, helping your brand connect with your audience and improve its online presence.</p>
+               <a href="#">Learn more</a>
+         </div>
+         <div>
+            <i class="fa-solid fa-photo-film"></i>
+            <h2>Photography</h2>
+            <p>We offer high-quality photography services that capture the essence of your brand, events, and personal moments. With a focus on detail and storytelling, our solutions are customized to fit your needs.</p>
+               <a href="#">Learn more</a>
+         </div>
+      </div>
+   </div>
+</div>   
+<!----------------------------------portfolio------------------------------->
+<div id="portfolio">
+   <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+         <div class="work">
+            <img src="images/cinema-camera-close-up-stockcake.jpg">
+            <div class="layer">
+               <h3>Creative Video Production</h3>
+               <p>Transform your vision into compelling visual stories with our expert video production services.</p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+         </div>
+         <div class="work">
+            <img src="images/writing-fountain-pen-stockcake.jpg">
+            <div class="layer">
+               <h3>Expert Content Writing</h3>
+               <p>Our Expert Content Writing Services provide high-quality, engaging, and SEO-optimized content tailored to your specific needs.</p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+         </div>
+         <div class="work">
+            <img src="images/photography-gear-array-stockcake.jpg">
+            <div class="layer">
+               <h3>Professional Photography</h3>
+               <p>I am a professional photographer with a passion for capturing stunning, high-quality images that tell a story.</p>
+                  <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+         </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+   </div>
+</div>          
+ <!-------------------------content-------------------->
+ <div id="contact">
+   <div class="container">
+      <div class="row">
+         <div class="contact-left">
+            <h1>Contact me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>niyonkurueddy052@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+250785191517</p>
+            <div class="social-icons">
+               <a href="https://www.instagram.com/aarontv2024" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+               <a href="https://www.tiktok.com/@eddydodox6" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+               <a href="https://www.youtube.com/@Pst-Aaron" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <a href="images/Niyonkuru Eddy.pdf" download class="btn btn2">Download CV</a>
+         </div>
+         <div class="contact-right">
+            <form id="submit-to-google-sheet">
+             <input type="text" name="Name" placeholder="Your Name" required>   
+             <input type="email" name="Email" placeholder="Your Email" required>
+             <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+             <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+         </div>
+      </div>
+   </div>
+   <div class="copyright">
+      <p>© Niyonkuru Eddy's portfolio 2024.</p>
+   </div>
+ </div>   
+ <script>
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+    /**
+     * This function takes a tabname and opens the corresponding tab
+     * @param {string} tabname - the name of the tab to open
+     */
+    function opentab(tabname) {
+      const activeLink = document.querySelector(".active-link");
+      const activeTab = document.querySelector(".active-tab");
+
+      if (activeLink) activeLink.classList.remove("active-link");
+      if (activeTab) activeTab.classList.remove("active-tab");
+
+      const target = event.currentTarget;
+      target.classList.add("active-link");
+
+      const tab = document.getElementById(tabname);
+      tab.classList.add("active-tab");
+    }
+
+ </script> 
+ <script>
+   var sidemenu = document.getElementById("sidemenu");
+   function showMenu(){
+      sidemenu.style.right = "0";
+   }
+   function hideMenu(){
+      sidemenu.style.right = "-200px";
+   }
+ </script>
+ <script>
+   const scriptURL = 'https://script.google.com/macros/s/AKfycby0DawF3uWqgbOqp0W0vIrhz-zO9ugMBhiVtNWRk4HDy3tk5bMnQcO9-LiAsEwY5fJS/exec'
+   const form = document.forms['submit-to-google-sheet']
+   const msg = document.getElementById("msg")
+   form.addEventListener('submit', e => {
+     e.preventDefault()
+     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+       .then(response => {
+         msg.innerHTML = "Message sent successfully"
+         setTimeout(function(){
+           msg.innerHTML = ""
+         }, 5000)
+         form.reset()
+       })
+       .catch(error => console.error('Error!', error.message))
+   })
+ </script>
+</body>
+</html>
+         
+         
+         
+         
+         
