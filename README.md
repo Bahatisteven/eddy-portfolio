@@ -5,12 +5,12 @@ This is a personal portfolio website built to showcase Niyonkuru Eddy and their 
 ## Technologies Used
 - HTML5
 - CSS3
-- JavaScript 
+- JavaScript
 
 ## Features
-- Fully responsive design
-- Showcases projects, skills and service
-- Contact form
+- Fully responsive design across all devices
+- Showcases projects, skills, and services with images and descriptions
+- Integrated contact form to receive messages from visitors
 
 ## Setup Instructions
 1. Clone the repository:
