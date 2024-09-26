@@ -8,19 +8,6 @@ box-sizing: border-box;
 html {
 scroll-behavior: smooth;
 }
-#fancytext {
-    font-size: 36px;
-    animation: typing 2s steps() infinite;
-  }
-  
-  @keyframes typing {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 100%;
-    }
-  }
 body {
 background-color: #080808;
 color: #fff;
@@ -73,7 +60,11 @@ nav ul li a:hover::after {
 .header-text h1 span {
     color: #ff004f;
 }
+
+
 /* -----------------about me---------------------- */
+
+
 #about {
     padding: 80px 0;
     color: #ababab;
@@ -148,7 +139,11 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
     display: block;
 }
+
+
 /*--------------------------service------------------*/
+
+
 #services {
     padding: 30px 0;
 }
@@ -187,7 +182,10 @@ nav ul li a:hover::after {
     transform: translateY(-10px);
 }
 
+
 /*--------------------------portfolio------------------*/
+
+
 #portfolio {
     padding: 50px 0;
 }
@@ -262,7 +260,11 @@ nav ul li a:hover::after {
 .btn:hover {
     background: #ff004f;
 }
+
+
 /*------------------------------contact-------------------------------*/
+
+
 .contact-left {
     flex-basis: 35%
 }
@@ -331,13 +333,15 @@ form input, form textarea {
 nav .fa-solid {
     display: none;
 }
+
+
 /*-------------------------------css for small screens---------------------------*/
 
 
 
 @media screen and (max-device-width: 600px) {
     .header-text {
-        margin-top: 100%;
+        margin-top: 10%;
         font-size: 16px;
     }
     .header-text h1 {
@@ -358,7 +362,72 @@ nav .fa-solid {
         z-index: 2;
         transition: right 0.5s;
     }
-    nav ul li {
+        /* Hide the logo on small screens for better alignment */
+    #logo {
+        width: 120px;
+        margin-right: 60px;
+        margin-bottom: 10px;    
+    }
+
+    /* Align the navigation and header elements for a mobile-friendly experience */
+    nav {
+        margin-right: 60px;
+        margin-top: 10px; 
+    }
+    nav ul {
+        text-align: center;
+    }
+
+    /* Optimize header-text spacing and font sizes for small devices */
+    .header-text {
+        margin-top: 50%;
+        font-size: 14px;
+    }
+    .header-text h1 {
+        font-size: 24px;
+    }
+
+    /* Adjust padding for smoother layout on small screens */
+    .container {
+        padding: 5px 5%;
+    }
+
+    /* Improve about section layout on smaller screens */
+    .about-col-1 img {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /* Services and portfolio grid layout optimized for small devices */
+    .services-list, .work-list {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    /* Optimize buttons for touch devices */
+    .btn, .submit {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    /* Adjust footer and copyright for better readability on small screens */
+    .copyright {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    /* Contact section adjustments */
+    .contact-left p, .contact-right form input, .contact-right form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Optimize text and icon sizes */
+    .social-icons a {
+        font-size: 25px;
+        margin-right: 13px;
+    }
+        nav ul li {
         display: block;
         margin: 25px;
     }
@@ -428,10 +497,7 @@ nav .fa-solid {
         font-size: 14px;
     }
     .contact-left p i {
-        font-size: 14px;
-    }
-    .social-icons a {
-        font-size: 14px;
+        font-size: 25px;
     }
     .submit {
         font-size: 14px;
@@ -443,9 +509,6 @@ nav .fa-solid {
         font-size: 14px;
     }
     .contact-light p i {
-        font-size: 14px;
-    }
-    .social-icons a {
         font-size: 14px;
     }
     .submit {
@@ -468,11 +531,8 @@ nav .fa-solid {
     #about {
         padding-top: 14px;
     }
-    
-
-}
-#msg {
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
-}
+    #msg {
+        color: #61b752;
+        margin-top: -40px;
+        display: block;
+    }
